@@ -292,7 +292,6 @@ article .icon:hover {
 .hobby-img {
   border-radius: 2rem;
   width: 90%;
-  height: 90%;
 }
 
 .hobby-title {
@@ -306,6 +305,8 @@ article .icon:hover {
   font-size: 1.75rem;
   margin-bottom: 2rem;
 }
+
+
 
 
 
