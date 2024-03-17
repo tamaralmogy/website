@@ -151,6 +151,10 @@ nav a:hover {
   transition: opacity 250ms ease-in-out 250ms;
 }
 
+.logo img {
+  filter: grayscale(100%);
+}
+
 @media screen and (min-width: 1050px) {
   .nav-toggle-label {
     display: none;
