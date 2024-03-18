@@ -18,15 +18,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="all">
 
-  <!-- The following pattern defers CSS loading, making page load much faster -->
-  <link rel="preload" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"></noscript>
-
-  <script src="https://code.jquery.com/jquery-3.6.3.min.js" defer></script>
-  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" defer></script>
 
   <link rel="stylesheet" type="text/css" href="cv.css">
   <link rel="stylesheet" type="text/css" href="nav.css">
+  <link rel="stylesheet" type="text/css" href="mole-design.css">
 
   <!-- Use AcademicIcons for Google Scholar and Semantic Scholar icons -->
   <!-- The following pattern defers CSS loading, making page load much faster -->
@@ -34,6 +29,7 @@
   <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"></noscript>
 
   <script src="no-transition-on-resize.js" defer></script>
+  <script src="mole-game.js" defer></script>
 
   <script type="application/ld+json">
   {
@@ -52,6 +48,7 @@
       <img id="me" loading=lazy alt="A photo of Tamar Almogy" src="./assets/תמונה.jpg">
       <a href="#">Tamar Almogy</a>
     <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation bar">
+    </div>
     <nav>
       <ul>
         <li><a href="index.html" aria-label="home"><i class="fa-solid fa-house" aria-hidden="true"></i>Home</a></li>
@@ -104,6 +101,14 @@
         </div>
       </div>
     </section>
+
+    <section id="whack-a-mole-section">
+      <h1>Whack a Mole</h1>
+      <h2 id="score">0</h2>
+      <div id="board">
+      </div>
+    </section>
+
 
 </div>
 </body>

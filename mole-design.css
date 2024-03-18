@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+/* game was done with the help of https://www.youtube.com/watch?v=ej8SatOj3V4&t=337s */
+
+
+#whack-a-mole-section {
+    text-align: center;
+    margin-top: 50px; 
+    padding: 20px;
+    background-color: peachpuff; 
+    border-radius: 10px;
+  }
+  
+
+body {
+    font-family:"Poppins", sans-serif;
+    text-align: center;
+}
+
+#board {
+    width: 360px;
+    height: 360px;
+
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+
+    background: url("./assets/soil.png");
+    background-size: cover;
+    border-radius: 25px;
+}
+
+#board div {
+    width: 120px; 
+    height: 120px;
+    background-image: url("./assets/pipe.png");
+    background-size: cover;
+}
+
+#board div img {
+    /* all img tags inside tiles */
+    width: 60px;
+    height: 60px;
+
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
