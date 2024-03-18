@@ -85,6 +85,7 @@
         <li><a href="index.html" aria-label="home"><i class="fa-solid fa-house" aria-hidden="true"></i>Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="traveling.html">Traveling</a></li>
+        <li><a href="hobbies.html">Hobbies</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
@@ -96,49 +97,45 @@
   </header>
 
   <div id="page-wrap">
+  
+    <div class="clear"></div>
+    <div class="clear"></div>
 
-    <div class="clear"></div>
-    <div class="clear"></div>
-  
-  
-    <section id="hobbies">
-      <p class="section__text__p1">Let's find out about my</p>
-      <h1 class="title">Hobbies</h1>
-      <div class="traveling-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <h2 class="title">Baking</h2>
-              <img
-                src="./assets/baking.jpeg"
-                alt="Baking"
-                class="hobby-img"
-              />
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <h2 class="title">Yoga</h2>
-              <img
-                src="./assets/yoga.jpeg"
-                alt="Yoga"
-                class="hobby-img"
-              />
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <h2 class="title">Reading</h2>
-              <img
-                src="./assets/reading.jpeg"
-                alt="Reading"
-                class="hobby-img"
-              />
-            </div>
-          </div>
-        </div>
+    <section id="contact">
+      <p class="section__text__p1">Get In Touch</p>
+      <h1 class="title">Contact Me</h1>
+        <div class="details-container">
+          <form class="contact-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <label for="rating">Rate my website (from 1 to 10):</label>
+            <select id="rating" name="rating" required>
+              <option value="">Select rating</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+    
+            <button type="submit">Send Message</button>
+          </form>
+
       </div>
     </section>
+
   </div>
 
 </body>

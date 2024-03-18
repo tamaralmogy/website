@@ -343,16 +343,48 @@ article .icon:hover {
 }
 
 
+/* CONTACT SECTION */
 
+.contact-form {
+  display: flex;
+  flex-direction:column;
+  width: 100%;
+}
 
+.contact-form label {
+  margin-bottom: 10px;
+}
 
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea,
+.contact-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
 
+.contact-form textarea {
+  height: 100px;
+}
 
+.contact-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
 
-  
+.contact-form button:hover {
+  background-color: #0056b3;
 
-
-
+}
 
 
 /* Switch to a single column (paper description below image) if the screen is small.
@@ -393,56 +425,6 @@ em {
   float: right;
 }
 
-/* footer with social icons */
-
-footer {
-  background-color: #eaeaea;
-  text-align: center;
-  width: 100%;
-}
-
-footer i {
-  margin: 20px 5px;
-  transform: scale(1.0);
-  transition-duration: 0.2s;
-}
-
-footer i:hover {
-  margin: 20px 5px;
-  transform: scale(1.2);
-  transition-duration: 0.2s;
-}
-
-footer a {
-  color: #757575;
-  text-decoration: none;
-  border-bottom: none;
-}
-
-footer a:hover {
-  color: #757575;
-  border-bottom: none;
-}
-
-/* Set different hover colors per icon */
-footer i[class*="ai-google-scholar"]:hover {
-  color: #4b87ea;
-}
-footer i[class*="ai-semantic-scholar"]:hover {
-  color: #e0bf48;
-}
-footer i[class*="fa-youtube"]:hover {
-  color: #e30707;
-}
-footer i[class*="fa-x-twitter"]:hover {
-  color: black;
-}
-footer i[class*="fa-linkedin"]:hover {
-  color: #0a66c2;
-}
-footer i[class*="fa-envelope"]:hover {
-  color: black;
-}
 
 /* bib tooltips */
 
