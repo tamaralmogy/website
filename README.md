@@ -30,3 +30,24 @@ jQuery is a lightweight JavaScript library commonly used in web development to s
 - **Event Handling**: Provides methods for attaching event handlers to HTML elements.
 - **Ajax Interactions**: Offers streamlined methods for making asynchronous HTTP requests to the server.
 - **Animations and Effects**: Includes built-in functions for creating animations and effects on web pages.
+
+
+## Q3: Whack a Mole
+
+This JavaScript code implements a simple "Whack-a-Mole" game. 
+
+- **setGame()**: Sets up the game board by creating a 3x3 grid of tiles.
+- **setMole()**: Places a mole randomly on one of the tiles every second.
+- **setPlant()**: Places a plant randomly on one of the tiles every two seconds.
+- **selectTile()**: Handles tile clicks. If the clicked tile contains a mole, increments the score; if it contains a plant, ends the game and displays the final score.
+
+## Q4: Form
+
+If server-side functionality were added, the contact form would:
+
+- Validate user input, ensuring required fields are filled and data is correctly formatted.
+- Sending email notifications to the website owner.
+- Potentially store the form data in a database for future reference or analysis.
+- Enhance the contact form by providing validation, data processing, email notifications, and confirmation messages.
+
+

@@ -9,7 +9,7 @@ window.onload = function() {
 
 function setGame() {
     //set up the grid in html
-    for (let i = 0; i < 9; i++) { //i goes from 0 to 8, stops at 9
+    for (let i = 0; i < 9; i++) { 
         //<div id="0-8"></div> going to use the ID in-order to define what was on it
         let tile = document.createElement("div");
         tile.id = i.toString();
@@ -22,7 +22,6 @@ function setGame() {
 }
 
 function getRandomTile() {
-    //math.random --> 0-1 --> (0-1) * 9 = (0-9) --> round down to (0-8) integers
     let num = Math.floor(Math.random() * 9);
     return num.toString();
 }
