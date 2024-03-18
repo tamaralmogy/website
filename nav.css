@@ -139,9 +139,6 @@ nav a:hover {
   border-bottom: none;
 }
 
-.logo a:hover {
-  border-bottom: none;
-}
 
 .nav-toggle:checked ~ nav {
   transform: scale(1, 1);
