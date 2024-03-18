@@ -3,13 +3,26 @@
 Welcome to my personal website! This website serves as a platform for showcasing my accomplishments, hobbies, and more. Feel free to explore and get to know me better.
 
 ## Q1: Filesnames
-Here are the main files in this project:
+Here are the main files in Ohad's website:
 
 1. **index.html**: Contains the structure and content of the homepage.
 2. **cv.css**: Responsible for styling the elements of the website.
 3. **nav.css**: Styles the navigation bar.
 4. **no-transition-on-resize.js**: Fixes CSS transitions for smoother animations.
 5. **logic.js**: Adds additional functionality to the website.
+
+I have different file's in by website:
+
+1. **index.html**: Contains the structure and content of the homepage.
+2. **about.html**
+3. **traveling.html**
+4. **hobbies.html**
+5. **contact.html**
+6. **cv.css**: Responsible for styling the elements of the website.
+7. **nav.css**: Styles the navigation bar.
+8. **mole-design.css**: Styles the game.
+9. **no-transition-on-resize.js**: Fixes CSS transitions for smoother animations.
+10. **mole-game.js**: script for "Whack a mole game".
 
 ## About Me
 Hey! My name is Tamar, and I am a third year Computer-Science student. I created this website to share my journey, interests, and experiences with the world.
