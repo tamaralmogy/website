@@ -76,7 +76,7 @@ header {
   display: block;
   background: black;
   height: 2.5px;
-  width: 2em;
+  width: 1em;
   border-radius: 2px;
   position: relative;
 }
@@ -153,14 +153,14 @@ nav a:hover {
   filter: grayscale(100%);
 }
 
-@media screen and (min-width: 1050px) {
+@media screen and (min-width: 800px) {
   .nav-toggle-label {
     display: none;
   }
 
   header {
     display: grid;
-    grid-template-columns: 1fr auto minmax(800px, 3fr) 1fr;
+    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
   }
 
   .logo {
@@ -184,7 +184,7 @@ nav a:hover {
     top: initial;
     left: initial;
     */
-    
+
     grid-column: 3 / 4;
     display: flex;
     justify-content: flex-end;
@@ -196,8 +196,6 @@ nav a:hover {
     padding: 0;
     list-style: none;
     display: flex;
-
-
   }
 
   nav li {
