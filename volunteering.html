@@ -6,9 +6,9 @@
   <title>Tamar @ RUni</title>
 
   <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="./favicon/palm-tree-180.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./favicon/palm-tree-32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./favicon/palm-tree-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/v3/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/v3/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/v3/favicon-16x16.png">
   <link rel="manifest" href="/favicons/v3/site.webmanifest">
 
   <meta charset="UTF-8">
@@ -18,18 +18,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="all">
 
-
   <link rel="stylesheet" type="text/css" href="cv.css">
   <link rel="stylesheet" type="text/css" href="nav.css">
-  <link rel="stylesheet" type="text/css" href="mole-design.css">
+
+  <!-- Use FontAwesome for (most) icons -->
+  <script src="https://kit.fontawesome.com/2a7f8c9d6d.js" defer crossorigin="anonymous"></script>
 
   <!-- Use AcademicIcons for Google Scholar and Semantic Scholar icons -->
   <!-- The following pattern defers CSS loading, making page load much faster -->
   <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"></noscript>
 
+
   <script src="no-transition-on-resize.js" defer></script>
-  <script src="mole-game.js" defer></script>
 
   <script type="application/ld+json">
   {
@@ -37,6 +38,7 @@
     "@type": "Person",
     "name": "Tamar Almogy",
     "url": "http://www.tamaral.com",
+
   }
   </script>
 </head>
@@ -47,8 +49,8 @@
     <div class="logo">
       <img id="me" loading=lazy alt="A photo of Tamar Almogy" src="./assets/תמונה.jpg">
       <a href="#">Tamar Almogy</a>
-    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation bar">
     </div>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation bar">
     <nav>
       <ul>
         <li><a href="index.html" aria-label="home"><i class="fa-solid fa-house" aria-hidden="true"></i>Home</a></li>
@@ -56,61 +58,56 @@
         <li><a href="traveling.html">Traveling</a></li>
         <li><a href="hobbies.html">Hobbies</a></li>
         <li><a href="contact.html">Contact</a></li>
-
       </ul>
     </nav>
     <label for="nav-toggle" class="nav-toggle-label">
       <span>
-          <i class="fa fa-bars fa-lg"></i>
+        <i class="fa fa-bars fa-lg"></i>
       </span>
-  </label>
+    </label>
   </header>
 
   <div id="page-wrap">
-
+  
     <div class="clear"></div>
     <div class="clear"></div>
 
-    <section id="profile">
-      <div class="section__pic-container">
-        <img alt="A photo of Tamar Almogy" src="./assets/tamar_logo.png">
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Tamar Almogy</h1>
-        <p class="section__text__p2">and welcome to my page!</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-1"
-            onclick="window.open('./assets/TamarAlmogy-CV.pdf')"
-          >
-            Download CV
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/tamar-almogy-936004223/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/tamaralmogy'"
-          />
-        </div>
-      </div>
-    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get In Touch</p>
+      <h1 class="title">Contact Me</h1>
+        <div class="details-container">
+          <form class="contact-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" required></textarea>
 
-    <section id="whack-a-mole-section">
-      <h1>Whack a Mole</h1>
-      <h2 id="score">0</h2>
-      <div id="board">
+            <label for="rating">Rate my website (from 1 to 10):</label>
+            <select id="rating" name="rating" required>
+              <option value="">Select rating</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+    
+            <button type="submit">Send Message</button>
+          </form>
+
       </div>
     </section>
 
+  </div>
 
-</div>
 </body>
 </html>
